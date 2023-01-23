@@ -1,6 +1,7 @@
 import json
 import os
-"""Создаем класс с необходимыми методами"""
+"""Создаем класс с необходимыми методами
+"""
 
 class PostManager:
     def __init__(self,path):
@@ -38,8 +39,3 @@ class PostManager:
             if post['pk'] == pk:
                 return post
 
-co = 0
-post_manager = PostManager(os.path.join("data","posts.json"))
-posts = post_manager.get_posts_by_user('leo')
-
-print(posts)
